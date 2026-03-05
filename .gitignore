@@ -11,27 +11,13 @@ dist/
 build/
 *.egg-info/
 
-# Virtual environments
-venv/
-env/
-ENV/
 
 # IDE
 .vscode/
-.idea/
 *.swp
 *.swo
 *~
 .DS_Store
-
-# Jupyter
-.ipynb_checkpoints/
-*.ipynb
-
-# Data files (process output, not source)
-bronze/
-silver/
-gold/
 
 # OS
 Thumbs.db
