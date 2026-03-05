@@ -18,17 +18,27 @@ de-in-people/
 ├── requirements.txt
 ├── datasets/
 │   ├── gen/
-│   │   └── generate_data.py       # Data generation scripts
+│   │   └── generate_data.py              # Data generation scripts
 │   └── source_ats/
-│       ├── raw_applications.csv   # Raw source data
+│       ├── raw_applications.csv          # Raw source data
 │       ├── raw_candidates.csv
 │       └── raw_interviews.csv
 ├── scripts/
-|   ├── bronze/                    # Raw data layer
-|   ├── silver/                    # Cleaned data layer
-|   └── gold/                      # Analytics layer
-└── quality_checks/                # Data validation scripts
+│   ├── init_database.sql                 # Database initialization
+│   ├── bronze/                           # Raw data layer
+│   ├── silver/                           # Data cleaning and transformation
+│   └── gold/                             # Aggregated analytics data
+│       ├── dm_hiring_process.sql         # Hiring process metrics
+│       ├── monthly_active_pipeline.sql   # Pipeline activity by month
+│       └── cumulative_hires_by_source.sql # Hire source analysis
+├── docs/                                 # Documentation
+├── quality_checks/                       # Data validation scripts
+└── .git/                                 # Version control
 ```
+
+## Data Flow Diagram
+
+![Data Flow Diagram](docs/data_flow.png)
 
 ## Setup
 
