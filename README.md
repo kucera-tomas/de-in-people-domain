@@ -23,10 +23,11 @@ de-in-people/
 │       ├── raw_applications.csv   # Raw source data
 │       ├── raw_candidates.csv
 │       └── raw_interviews.csv
-├── bronze/                         # Raw data layer
-├── silver/                         # Cleaned data layer
-├── gold/                           # Analytics layer
-└── quality_checks/                 # Data validation scripts
+├── scripts/
+|   ├── bronze/                    # Raw data layer
+|   ├── silver/                    # Cleaned data layer
+|   └── gold/                      # Analytics layer
+└── quality_checks/                # Data validation scripts
 ```
 
 ## Setup
